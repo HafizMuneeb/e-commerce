@@ -3572,6 +3572,7 @@ input Product_title_operator {
   in: [String]
   not_in: [String]
   all: [String]
+  exists: Boolean
 }
 
 input Product_publishedOn_operator {
@@ -4532,6 +4533,7 @@ input versionsProduct_version__title_operator {
   in: [String]
   not_in: [String]
   all: [String]
+  exists: Boolean
 }
 
 input versionsProduct_version__publishedOn_operator {
@@ -12076,7 +12078,7 @@ enum PageUpdate__status_MutationInput {
 }
 
 input mutationProductInput {
-  title: String!
+  title: String
   publishedOn: String
   layout: JSON
   stripeProductID: String
